@@ -58,6 +58,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!--project lib-->
+        <dependency>
+            <groupId>com.xiaoyutech</groupId>
+            <artifactId>lib-common</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
