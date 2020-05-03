@@ -95,6 +95,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>重构版本微服务项目</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

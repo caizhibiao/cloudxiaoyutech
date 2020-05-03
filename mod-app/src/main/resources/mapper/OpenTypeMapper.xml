@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper>
-    <insert id="create" parameterType="com.xiaoyutech.mall.app.entities.OpenType"
+<mapper namespace="com.xiaoyutech.mall.app.dao.OpenTypeDao">
+    <insert id="create" parameterType="OpenType"
             useGeneratedKeys="true" keyProperty="id">
           insert into t_opentype(serial) values (#{serical})
     </insert>
