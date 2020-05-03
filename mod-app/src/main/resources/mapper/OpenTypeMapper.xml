@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper>
+    <insert id="create" parameterType="com.xiaoyutech.mall.app.entities.OpenType"
+            useGeneratedKeys="true" keyProperty="id">
+          insert into t_opentype(serial) values (#{serical})
+    </insert>
+
+    <resultMap id="BaseResultMap" type="com.xiaoyutech.mall.app.entities.OpenType">
+        <id column="id" property="id" jdbcType="BIGINT"></id>
+        <id column="action_url" property="actionUrl" jdbcType="VARCHAR"></id>
+    </resultMap>
+
+    <select id="getOpenTypeById" parameterType="Long" resultMap="BaseResultMap">
+           select * from t_opentype where id=#{id}
+    </select>
+
+</mapper>
